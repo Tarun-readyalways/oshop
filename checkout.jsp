@@ -85,7 +85,7 @@
     <div>
         <% 
             List<mvc.ProductModel> cartItems = (List<mvc.ProductModel>) request.getSession().getAttribute("cartItems");
-            double orderTotal = 1589.00;
+            double orderTotal = 0.00;
             if (cartItems != null) {
                 for (ProductModel item : cartItems) {
                     orderTotal += item.getProd_price();
